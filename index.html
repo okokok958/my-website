@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>USDT Payment</title>
+    <title>RealMoney</title>
 
     <style>
         * {
@@ -14,28 +14,50 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0f172a;
+            background: #0b1120;
             color: white;
-            padding: 40px 20px;
         }
 
         header {
+            background: #111827;
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid #263244;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #26a17b;
+        }
+
+        .tagline {
+            color: #cbd5e1;
+            margin-top: 8px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
             text-align: center;
             margin-bottom: 40px;
         }
 
-        header h1 {
-            font-size: 36px;
+        .intro h1 {
+            font-size: 38px;
             margin-bottom: 10px;
         }
 
-        header p {
-            color: #cbd5e1;
+        .intro p {
+            color: #94a3b8;
+            font-size: 18px;
         }
 
         .plans {
-            max-width: 1000px;
-            margin: auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 25px;
@@ -46,7 +68,7 @@
             padding: 35px 25px;
             border-radius: 18px;
             text-align: center;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            border: 1px solid #334155;
         }
 
         .plan h2 {
@@ -56,8 +78,8 @@
         .price {
             font-size: 30px;
             font-weight: bold;
-            margin: 25px 0;
             color: #26a17b;
+            margin: 25px 0;
         }
 
         .buy-button {
@@ -79,87 +101,108 @@
             color: #94a3b8;
             font-size: 13px;
         }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Choose Your Payment</h1>
-    <p>Select your amount and pay with USDT</p>
+    <div class="logo">RealMoney</div>
+    <div class="tagline">Secure USDT Payments</div>
 </header>
 
-<div class="plans">
+<div class="container">
 
-    <!-- 800 USDT -->
-    <div class="plan">
-        <h2>Package 1</h2>
-
-        <div class="price">
-            800 USDT
-        </div>
-
-        <a
-            class="buy-button"
-            href="https://nowpayments.io/payment/?iid=5527992886"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Pay 800 USDT
-        </a>
-
-        <div class="network">
-            USDT • TRC20
-        </div>
+    <div class="intro">
+        <h1>Choose Your Package</h1>
+        <p>Select your preferred amount and continue with USDT.</p>
     </div>
 
+    <div class="plans">
 
-    <!-- 1500 USDT -->
-    <div class="plan">
-        <h2>Package 2</h2>
+        <!-- 800 USDT -->
+        <div class="plan">
+            <h2>Package 1</h2>
 
-        <div class="price">
-            1,500 USDT
+            <div class="price">
+                800 USDT
+            </div>
+
+            <a
+                class="buy-button"
+                href="https://nowpayments.io/payment/?iid=5527992886"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pay 800 USDT
+            </a>
+
+            <div class="network">
+                USDT • TRC20
+            </div>
         </div>
 
-        <a
-            class="buy-button"
-            href="https://nowpayments.io/payment/?iid=5418983676"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Pay 1,500 USDT
-        </a>
 
-        <div class="network">
-            USDT • TRC20
+        <!-- 1500 USDT -->
+        <div class="plan">
+            <h2>Package 2</h2>
+
+            <div class="price">
+                1,500 USDT
+            </div>
+
+            <a
+                class="buy-button"
+                href="https://nowpayments.io/payment/?iid=5418983676"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pay 1,500 USDT
+            </a>
+
+            <div class="network">
+                USDT • TRC20
+            </div>
         </div>
-    </div>
 
 
-    <!-- 5000 USDT -->
-    <div class="plan">
-        <h2>Package 3</h2>
+        <!-- 5000 USDT -->
+        <div class="plan">
+            <h2>Package 3</h2>
 
-        <div class="price">
-            5,000 USDT
+            <div class="price">
+                5,000 USDT
+            </div>
+
+            <a
+                class="buy-button"
+                href="https://nowpayments.io/payment/?iid=4466547641"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pay 5,000 USDT
+            </a>
+
+            <div class="network">
+                USDT • TRC20
+            </div>
         </div>
 
-        <a
-            class="buy-button"
-            href="https://nowpayments.io/payment/?iid=4466547641"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Pay 5,000 USDT
-        </a>
-
-        <div class="network">
-            USDT • TRC20
-        </div>
     </div>
 
 </div>
+
+<footer>
+    © 2026 RealMoney. All rights reserved.
+</footer>
 
 </body>
 </html>
