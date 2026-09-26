@@ -1,26 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RealMoney | USDT Payments</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+        }
+
+        header {
+            background: #0d1726;
+            padding: 22px 20px;
+            border-bottom: 1px solid #243246;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #26a17b;
+        }
+
+        .contact-top a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+        }
+
+        .hero h1 span {
+            color: #26a17b;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #aab7c7;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #94a3b8;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .plan {
+            background: #111e30;
+            border: 1px solid #29394d;
+            border-radius: 18px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .plan:hover {
+            transform: translateY(-4px);
+            border-color: #26a17b;
+        }
+
+        .plan h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .price {
+            color: #26a17b;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 25px 0 10px;
+        }
+
+        .description {
+            color: #aab7c7;
+            min-height: 45px;
+            line-height: 1.5;
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 25px;
+            background: #26a17b;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .buy-button:hover {
+            background: #1f8a69;
+        }
+
+        .network {
+            margin-top: 14px;
+            color: #7f8da0;
+            font-size: 13px;
+        }
+
+        .contact {
+            margin-top: 60px;
+            background: #0d1726;
+            border: 1px solid #243246;
+            border-radius: 18px;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-top: 0;
+        }
+
+        .contact p {
+            color: #aab7c7;
+        }
+
+        .contact a {
+            color: #26a17b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #66758a;
+            border-top: 1px solid #1d2a3b;
+        }
+
+        @media (max-width: 750px) {
+
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero {
+                padding: 55px 20px 45px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .plans {
+                grid-template-columns: 1fr;
+            }
+
+            .plan {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
 <header>
-    <h1>RealMoney</h1>
-    <p>Real users. Secure payment process.</p>
+    <div class="header-inner">
+
+        <div class="logo">
+            RealMoney
+        </div>
+
+        <div class="contact-top">
+            <a href="mailto:realmoney22@gmail.com">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
 </header>
 
-<section class="notice">
-    <h2>Fast & Secure Service</h2>
+
+<section class="hero">
+
+    <h1>
+        Welcome to <span>RealMoney</span>
+    </h1>
+
     <p>
-        Payments are processed through our payment provider.
-        Processing time may vary depending on the transaction.
+        Choose a payment option below and continue securely
+        using USDT on the TRC20 network.
     </p>
+
 </section>
 
-<section class="contact">
-    <h2>Contact</h2>
 
-    <a href="mailto:realmoney22@gmail.com">
-        Email: realmoney22@gmail.com
-    </a>
+<div class="container">
 
-    <br><br>
+    <div class="section-title">
+        <h2>Payment Options</h2>
+        <p>Select the amount you want to pay.</p>
+    </div>
 
-    <a href="tel:+15378343">
-        Phone: +15378343
-    </a>
-</section>
+
+    <div class="plans">
+
+        <!-- OPTION 1 -->
+
+        <div class="plan">
+
+            <h3>Option 1</h3>
+
+            <div class="price">
+                800 USDT
+            </div>
+
+            <div class="description">
+                USDT payment via TRC20.
+            </div>
+
+            <a
+                class="buy-button"
+                href="https://nowpayments.io/payment/?iid=5527992886"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pay 800 USDT
+            </a>
+
+            <div class="network">
+                USDT • TRC20
+            </div>
+
+        </div>
+
+
+        <!-- OPTION 2 -->
+
+        <div class="plan">
+
+            <h3>Option 2</h3>
+
+            <div class="price">
+                1,500 USDT
+            </div>
+
+            <div class="description">
+                USDT payment via TRC20.
+            </div>
+
+            <a
+                class="buy-button"
+                href="https://nowpayments.io/payment/?iid=5418983676"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pay 1,500 USDT
+            </a>
+
+            <div class="network">
+                USDT • TRC20
+            </div>
+
+        </div>
+
+
+        <!-- OPTION 3 -->
+
+        <div class="plan">
+
+            <h3>Option 3</h3>
+
+            <div class="price">
+                5,000 USDT
+            </div>
+
+            <div class="description">
+                USDT payment via TRC20.
+            </div>
+
+            <a
+                class="buy-button"
+                href="https://nowpayments.io/payment/?iid=4466547641"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Pay 5,000 USDT
+            </a>
+
+            <div class="network">
+                USDT • TRC20
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact">
+
+        <h2>Contact RealMoney</h2>
+
+        <p>
+            If you have questions about a payment, contact us:
+        </p>
+
+        <p>
+            📧
+            <a href="mailto:realmoney22@gmail.com">
+                realmoney22@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📞
+            <a href="tel:+1537834343">
+                +1537834343
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+
+<footer>
+    © 2026 RealMoney. All rights reserved.
+</footer>
+
+</body>
+</html>
